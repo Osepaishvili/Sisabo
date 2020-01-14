@@ -1,15 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" /> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <title>Sisabo</title>
 </head>
+
 <body>
-    <p>change</p>
+    <header class="header">
+        <div class="row wrapper">
+            <div class="header__logo-box">
+                <img src="img/modest.svg" alt="Logo" class="header__logo">
+            </div>
+            <ul>
+                <li>
+                    <p>home</p>
+                </li>
+                <li>
+                    <p>about</p>
+                </li>
+                <li>
+                    <p>work</p>
+                </li>
+                <li>
+                    <p>team</p>
+                </li>
+                <li>
+                    <p>services</p>
+                </li>
+                <li>
+                    <p>fetures</p>
+                </li>
+                <li>
+                    <p>contact</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-main">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="content">
+                        <h1 class="heading-primary">welcome to our marketplace</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor
+                            non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
+                        <button>view more</button>
+                        <button>video tour</button>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div class="background__carousel">
+                    <div class="background__image">
+                        <img src="/img/pic.png" alt="">
+                    </div>
+                    <div class="background__image">
+                        <img src="/img/pic2.jpeg" alt="">
+                    </div>
+                    <div class="background__image">
+                        <img src="/img/pic3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.background__carousel').slick({
+                prevArrow: false,
+                nextArrow: false,
+                infinite: true,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                speed: 500,
+                fade: true,
+                pauseOnHover: false,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
 </body>
+
 </html>

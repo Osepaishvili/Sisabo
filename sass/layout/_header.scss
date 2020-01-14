@@ -1,3 +1,56 @@
 .header {
-    height: 85vh;
+  height: 81px;
+  background-color: $color-background-dark;
+  position: relative;
+
+  &__logo-box {
+    width: 98px;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  ul {
+    display: inline-block;
+    margin-left: auto;
+    justify-content: space-between;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      border-radius: 5px;
+      margin: 0 5px;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      p {
+        color: $color-header-text;
+        padding: 8px 10px;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        border: 2px solid $color-border-gray;
+        cursor: pointer;
+        p {
+          padding: 8px 10px;
+          text-transform: uppercase;
+        }
+      }
+      &:active {
+        border: 2px solid $color-primary;
+        cursor: pointer;
+        p {
+          color: $color-primary;
+        }
+      }
+    }
+  }
 }
