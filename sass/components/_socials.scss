@@ -1,12 +1,35 @@
-.social{
+.social {
+  ul {
     display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    list-style-type: none;
 
-    &__about{
-        ul{
-            li{
-    
-            }
-        }
+    li {
+      position: relative;
+      margin-right: 1px;
+      img{
+          height: 23px;
+          @include absCenter();
+      }
+      &:hover{
+          cursor: pointer;
+      }
     }
-    
+  }
+
+  &__about {
+    ul {
+        margin-top: 55px;
+      li {
+        width: 60px;
+        height: 60px;
+        background-color: $color-grey-light-3;
+        &:hover{
+            background-color: $color-grey-light-2;
+        }
+      }
+    }
+  }
 }

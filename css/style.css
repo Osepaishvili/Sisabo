@@ -225,6 +225,43 @@ body {
     background-color: transparent;
     border-radius: 2px; }
 
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  list-style-type: none; }
+  .social ul li {
+    position: relative;
+    margin-right: 1px; }
+    .social ul li img {
+      height: 23px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .social ul li:hover {
+      cursor: pointer; }
+
+.social__about ul {
+  margin-top: 55px; }
+  .social__about ul li {
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0; }
+    .social__about ul li:hover {
+      background-color: #d0d5d9; }
+
+.option-list .option .option-number {
+  width: 50px;
+  height: 50px;
+  background-color: #23b7a4; }
+  .option-list .option .option-number p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .footer {
   background-color: #333;
   padding: 10rem 0;
@@ -339,5 +376,9 @@ body {
       width: 100%;
       object-fit: cover; }
 
-.section-about .left-side {
-  width: 47.9%; }
+.section-about {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #c8cdd0; }
+  .section-about .left-side {
+    width: 47.9%;
+    margin-right: 2%; }

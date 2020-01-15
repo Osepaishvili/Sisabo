@@ -29,7 +29,10 @@
   }
 }
 .section-about {
+  padding-bottom: 100px;
+  border-bottom: 1px solid $color-grey-light-3;
   .left-side {
     width: 47.9%;
+    margin-right: 2%;
   }
 }
