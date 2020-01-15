@@ -1,8 +1,30 @@
 .footer {
+    height: 95px;
     background-color: $color-grey-dark-3;
-    padding: 10rem 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+    .wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    p {
+        font-size: 1.2rem;
+        font-family: "Open Sans", sans-serif;
+        color: $color-white;
+        font-weight: 400;
+    }
+    .footer-icons {
+        margin-left: auto;
+        li {
+            margin: 0 15px;
+            display: inline;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 
     @include respond(tab-port) {
         padding: 8rem 0;

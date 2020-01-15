@@ -29,6 +29,12 @@
     border: none;
     background-color: $color-form;
     border-radius: 4px;
+    resize: none;
+    outline: none;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 1.7rem;
+    color: $color-border-gray;
+    padding: 4px 8px;
 }
 .input-name, .input-email {
     display: inline-block;

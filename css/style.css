@@ -287,10 +287,27 @@ body {
     width: calc(100% - 70px); }
 
 .footer {
-  background-color: #333;
-  padding: 10rem 0;
-  font-size: 1.4rem;
-  color: #e1e6ea; }
+  height: 95px;
+  background-color: #333; }
+  .footer .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; }
+  .footer p {
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-weight: 400; }
+  .footer .footer-icons {
+    margin-left: auto; }
+    .footer .footer-icons li {
+      margin: 0 15px;
+      display: inline; }
+      .footer .footer-icons li img {
+        width: 20px;
+        height: 20px; }
   @media only screen and (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
@@ -401,7 +418,13 @@ body {
 .input {
   border: none;
   background-color: #eaeef1;
-  border-radius: 4px; }
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.7rem;
+  color: #5b6168;
+  padding: 4px 8px; }
 
 .input-name, .input-email {
   display: inline-block;
@@ -455,26 +478,26 @@ body {
     width: 49%;
     vertical-align: top; }
 
-.section-contact .row {
-  margin-bottom: 0; }
-  .section-contact .row .content-wrapper {
-    display: flex;
-    align-items: flex-start;
-    position: relative; }
-    .section-contact .row .content-wrapper .left-side {
-      width: 47.9%; }
-    .section-contact .row .content-wrapper .right-side {
-      margin-left: 4.2rem;
-      width: 47.9%; }
-
-.section-contact .google-map .mapouter {
-  position: relative;
-  text-align: right;
-  height: 346px;
-  width: 100%; }
-
-.section-contact .google-map .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 346px;
-  width: 100%; }
+.section-contact {
+  margin-bottom: 105px; }
+  .section-contact .row {
+    margin-bottom: 0; }
+    .section-contact .row .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      position: relative; }
+      .section-contact .row .content-wrapper .left-side {
+        width: 47.9%; }
+      .section-contact .row .content-wrapper .right-side {
+        margin-left: 4.2rem;
+        width: 47.9%; }
+  .section-contact .google-map .mapouter {
+    position: relative;
+    text-align: right;
+    height: 346px;
+    width: 100%; }
+  .section-contact .google-map .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 346px;
+    width: 100%; }
