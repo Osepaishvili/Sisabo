@@ -31,9 +31,17 @@
 .section-about {
   padding-bottom: 100px;
   border-bottom: 1px solid $color-grey-light-3;
-  .left-side {
-    width: 47.9%;
-    margin-right: 2%;
+  .content-wrapper {
+    .left-side {
+      width: 48.1%;
+      display: inline-block;
+      margin-right: 2.2%;
+    }
+    .right-side {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
   }
 }
 
@@ -55,16 +63,16 @@
   }
   .google-map {
     .mapouter {
-      position:relative;
-      text-align:right;
-      height:346px;
-      width:100%;
+      position: relative;
+      text-align: right;
+      height: 346px;
+      width: 100%;
     }
     .gmap_canvas {
-      overflow:hidden;
-      background:none!important;
-      height:346px;
-      width:100%;
+      overflow: hidden;
+      background: none !important;
+      height: 346px;
+      width: 100%;
     }
   }
 }

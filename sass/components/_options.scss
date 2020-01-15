@@ -1,16 +1,23 @@
-.option-list{
-    .option{
-        .option-number{
-            width: 50px;
-            height: 50px;
-            background-color: $color-primary;
-            position: relative;
-            h2{
-                @include absCenter();
-            }
-        }
-        .option-text{
-
-        }
+.option-list {
+  .option {
+      margin-bottom: 30px;
+    .option-number {
+      width: 50px;
+      height: 50px;
+      background-color: $color-primary;
+      position: relative;
+      display: inline-block;
+      margin-right: 15px;
+      h2 {
+        @include absCenter();
+        margin: 0;
+        color: $color-white;
+      }
     }
+    .option-text {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 70px);
+    }
+  }
 }

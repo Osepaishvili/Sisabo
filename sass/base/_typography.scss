@@ -97,7 +97,7 @@ body {
   color: $color-heading-main-dark;
   margin-top: 5.1rem;
   margin-bottom: 3.4rem;
-  margin-left: .8rem;
+  margin-left: 0.8rem;
   font-family: "Quattrocento Sans", sans-serif;
 
   @include respond(tab-port) {
@@ -110,9 +110,17 @@ body {
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
-  font-weight: 700;
+  position: relative;
   text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 0rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.17;
+  &__about {
+    color: $color-heading-main-dark;
+  }
 }
 
 .paragraph {
