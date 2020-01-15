@@ -36,3 +36,35 @@
     margin-right: 2%;
   }
 }
+
+.section-contact {
+  .row {
+    margin-bottom: 0;
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      .left-side {
+        width: 47.9%;
+      }
+      .right-side {
+        margin-left: 4.2rem;
+        width: 47.9%;
+      }
+    }
+  }
+  .google-map {
+    .mapouter {
+      position:relative;
+      text-align:right;
+      height:346px;
+      width:100%;
+    }
+    .gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+      height:346px;
+      width:100%;
+    }
+  }
+}

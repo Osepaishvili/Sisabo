@@ -1,0 +1,48 @@
+.form-container {
+    width: 555px;
+    height: 400px;
+    background-color: $color-white;
+    position: absolute;
+    top: -129px;
+    padding: 2.7rem;
+    .col-1-of-2 {
+        width: calc((100% - 14px) / 2);
+        &:not(:last-child) {
+            margin-right: 14px;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+    }
+    .btn {
+        border: 2px solid transparent;
+        background-color: $color-primary;
+        border-radius: 5px;
+    }
+}
+.input {
+    border: none;
+    background-color: $color-form;
+    border-radius: 4px;
+}
+.input-name, .input-email {
+    display: inline-block;
+    width: 240px;
+    height: 45px;
+    margin-bottom: 30px;
+    margin-top:10px;
+}
+.input-message {
+    width: 494px;
+    height: 160px;
+    margin-top:10px;
+}
+.message {
+    display: block;
+    width: 100%;
+}
