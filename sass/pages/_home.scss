@@ -9,7 +9,7 @@
       top: 50%;
       transform: translate(0px, -50%);
       position: absolute;
-      p{
+      p {
         width: 65%;
       }
     }
@@ -26,5 +26,10 @@
       width: 100%;
       object-fit: cover;
     }
+  }
+}
+.section-about {
+  .left-side {
+    width: 47.9%;
   }
 }

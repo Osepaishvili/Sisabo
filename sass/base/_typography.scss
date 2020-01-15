@@ -6,14 +6,15 @@ body {
   color: $color-white;
 }
 .btn-text {
-    text-transform: uppercase;
-    font-family: "Quattrocento Sans", sans-serif;
-    font-size: 1.16rem;
-    font-weight: 700;
-    line-height: 1;  
-    color: $color-white;
+  text-transform: uppercase;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.16rem;
+  font-weight: 700;
+  line-height: 1;
+  color: $color-white;
 }
 .heading-primary {
+  position: relative;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 0rem;
@@ -40,13 +41,33 @@ body {
         */
   }
 
+  &__background {
+    padding-left: 23px;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    &--white {
+      color: $color-heading-main-dark;
+      &::before {
+        content: " ";
+        background-color: $color-grey-light-1;
+        width: 10px;
+        height: 35px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0px, -50%);
+      }
+    }
+  }
+
   &--sub {
     display: block;
     font-family: "Open Sans", sans-serif;
     font-size: 1.35rem;
     font-weight: 400;
     text-transform: none;
-    color: $color-heading-primary-sub-gray;
+    color: $color-heading-primary-sub-gray-2;
     line-height: 1.6;
     // animation: moveInRight 1s ease-out;
 
