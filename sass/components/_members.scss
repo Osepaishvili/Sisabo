@@ -1,0 +1,16 @@
+.member{
+    height: 31.25rem;
+    display: inline-block;
+    .top{
+        height: 25rem;
+        overflow: hidden;
+        width: 100%;
+        img{
+            object-fit: contain;
+        }
+    }
+    .bottom{
+        background-color: $color-grey-light-1;
+        padding: 20px 21px;
+    }
+}

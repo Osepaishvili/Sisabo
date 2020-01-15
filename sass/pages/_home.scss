@@ -44,6 +44,19 @@
     }
   }
 }
+.section-about {
+  display: block;
+  padding-bottom: 100px;
+}
+
+.section-features {
+  padding: 85px 0 0 0;
+  background-color: $color-background-light;
+  .heading-primary {
+    margin-top: 0;
+    color: $color-white;
+  }
+}
 
 .section-contact {
   margin-bottom: 105px;

@@ -81,7 +81,10 @@ body {
     color: $color-heading-primary-sub-gray-2;
     line-height: 1.6;
     // animation: moveInRight 1s ease-out;
-
+    &__team {
+      font-size: 1.17rem;
+      line-height: 1;
+    }
     @include respond(phone) {
       letter-spacing: 0.5rem;
     }
@@ -120,6 +123,21 @@ body {
   line-height: 1.17;
   &__about {
     color: $color-heading-main-dark;
+  }
+}
+
+.heading-fourtiary {
+  position: relative;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 0rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.17;
+  &__team {
+    color: $color-heading-main-dark;
+    line-height: 1.3;
   }
 }
 
