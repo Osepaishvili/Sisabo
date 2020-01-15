@@ -1,0 +1,22 @@
+.btn {
+  margin-top: 3.3rem;
+  margin-right: 10px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: $color-primary;
+  }
+  &:focus {
+    outline: none
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+  &--primary {
+    border: 2px solid $color-white;
+    padding: 15px 20px;
+    background-color: transparent;
+    border-radius: 2px;
+  }
+}
