@@ -126,6 +126,10 @@ body {
     .heading-primary--sub__team {
       font-size: 1.17rem;
       line-height: 1; }
+    .heading-primary--sub__features {
+      font-weight: 400;
+      line-height: 2rem;
+      color: #dcdfe1; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
@@ -520,6 +524,12 @@ body {
   .section-features .heading-primary {
     margin-top: 0;
     color: #fff; }
+  .section-features .heading-tertiary {
+    margin-top: 55px;
+    font-weight: 400; }
+  .section-features p {
+    margin-top: 30px;
+    padding-bottom: 125px; }
 
 .section-contact {
   margin-bottom: 105px; }
