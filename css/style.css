@@ -293,6 +293,13 @@ body {
     .social__about ul li:hover {
       background-color: #d0d5d9; }
 
+.social__team ul li {
+  width: 50px;
+  height: 50px;
+  background-color: #3a454d; }
+  .social__team ul li:hover {
+    background-color: #4e5a62; }
+
 .option-list .option {
   margin-bottom: 30px; }
   .option-list .option .option-number {
@@ -320,12 +327,34 @@ body {
   .member .top {
     height: 25rem;
     overflow: hidden;
-    width: 100%; }
+    width: 100%;
+    position: relative; }
     .member .top img {
       object-fit: contain; }
+    .member .top .socials-wrapper {
+      display: none;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%; }
+      .member .top .socials-wrapper .socials-center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
   .member .bottom {
     background-color: #e1e6ea;
     padding: 20px 21px; }
+  .member:hover .top > img {
+    opacity: 0.5; }
+  .member:hover .top .socials-wrapper {
+    display: block; }
+  .member:hover .bottom {
+    background-color: #3a454d; }
+    .member:hover .bottom h3 {
+      color: #fff; }
+    .member:hover .bottom p {
+      color: #fff; }
 
 .footer {
   height: 95px;
@@ -531,6 +560,9 @@ body {
 
 .section-about {
   display: block;
+  padding-bottom: 100px; }
+
+.section-team {
   padding-bottom: 100px; }
 
 .section-services {

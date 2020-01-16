@@ -1,16 +1,46 @@
-.member{
-    height: 31.25rem;
-    display: inline-block;
-    .top{
-        height: 25rem;
-        overflow: hidden;
-        width: 100%;
-        img{
-            object-fit: contain;
-        }
+.member {
+  height: 31.25rem;
+  display: inline-block;
+  .top {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    img {
+      object-fit: contain;
     }
-    .bottom{
-        background-color: $color-grey-light-1;
-        padding: 20px 21px;
+    .socials-wrapper {
+      display: none;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      .socials-center {
+        @include absCenter();
+      }
     }
+  }
+  .bottom {
+    background-color: $color-grey-light-1;
+    padding: 20px 21px;
+  }
+  &:hover {
+    .top {
+      > img {
+        opacity: 0.5;
+      }
+      .socials-wrapper {
+        display: block;
+      }
+    }
+    .bottom {
+      background-color: $color-background-light;
+      h3 {
+        color: $color-white;
+      }
+      p {
+        color: $color-white;
+      }
+    }
+  }
 }

@@ -9,25 +9,37 @@
     li {
       position: relative;
       margin-right: 1px;
-      img{
-          height: 23px;
-          @include absCenter();
+      img {
+        height: 23px;
+        @include absCenter();
       }
-      &:hover{
-          cursor: pointer;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
 
   &__about {
     ul {
-        margin-top: 55px;
+      margin-top: 55px;
       li {
         width: 60px;
         height: 60px;
         background-color: $color-grey-light-3;
-        &:hover{
-            background-color: $color-grey-light-2;
+        &:hover {
+          background-color: $color-grey-light-2;
+        }
+      }
+    }
+  }
+  &__team {
+    ul {
+      li {
+        width: 50px;
+        height: 50px;
+        background-color: $color-background-light;
+        &:hover {
+          background-color: $color-gray-dark-4;
         }
       }
     }
