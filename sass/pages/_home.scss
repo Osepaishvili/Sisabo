@@ -50,7 +50,32 @@
 }
 
 .section-team {
+  display: block;
   padding-bottom: 100px;
+}
+
+.section-work {
+  padding: 85px 0 60px 0;
+  background-color: $color-background-light;
+  display: block;
+  .heading-primary {
+    margin-top: 0;
+  }
+  .work-list {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 22.3rem;
+    margin-bottom:30px;
+  }
+  .btn-container {
+    display: block;
+    padding-top: 30px;
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 .section-services {
@@ -72,7 +97,6 @@
   background-color: $color-background-light;
   .heading-primary {
     margin-top: 0;
-    color: $color-white;
   }
   .heading-tertiary {
     margin-top: 55px;

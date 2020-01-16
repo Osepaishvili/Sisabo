@@ -1,0 +1,58 @@
+.work {
+  &:hover {
+    cursor: pointer;
+    .hover-container {
+      display: block;
+    }
+  }
+  position: relative;
+  .img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .hover-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .top {
+      width: 100%;
+      height: 100%;
+      .mask {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+      }
+      &::before,
+      &::after {
+        @include absCenter();
+        content: " ";
+        background-color: $color-white;
+        height: 20px;
+        width: 5px;
+        z-index: 1;
+      }
+      &::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+    .text-container {
+      position: absolute;
+      background-color: $color-heading-main-dark;
+      width: 100%;
+      bottom: 0;
+      h3 {
+        padding: 23px 20px;
+      }
+    }
+  }
+}

@@ -70,6 +70,20 @@ body {
         transform: translate(0px, -50%);
       }
     }
+    &--black{
+      color: $color-white;
+      &::before {
+        content: " ";
+        background-color: $color-gray-dark-4;
+        width: 10px;
+        height: 35px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0px, -50%);
+      }
+    }
   }
 
   &--sub {
